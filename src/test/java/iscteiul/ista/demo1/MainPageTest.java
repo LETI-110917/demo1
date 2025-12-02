@@ -24,8 +24,9 @@ public class MainPageTest {
         // Configuração do WebDriverWait com timeout explícito
         wait = new WebDriverWait(driver, Duration.ofSeconds(15));
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
         driver.get("https://www.jetbrains.com/");
+
 
         mainPage = new MainPage(driver);
 
