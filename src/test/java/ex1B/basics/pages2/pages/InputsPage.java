@@ -1,4 +1,4 @@
-package ex1B.basics.pages.pages;
+package ex1B.basics.pages2.pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

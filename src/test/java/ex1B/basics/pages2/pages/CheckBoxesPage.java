@@ -1,5 +1,5 @@
-// src/test/java/ex1B/basics/pages/pages/CheckBoxesPage.java
-package ex1B.basics.pages.pages;
+// src/test/java/ex1B/basics/pages2/pages2/CheckBoxesPage.java
+package ex1B.basics.pages2.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
