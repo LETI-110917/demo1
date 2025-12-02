@@ -19,10 +19,15 @@ public class MainPageTest {
     public void setUp() {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
         driver.get("https://www.jetbrains.com/");
 
+
         mainPage = new MainPage(driver);
+
+        if(mainPage.acceptCookiesButton.isDisplayed() && mainPage.acceptCookiesButton.isEnabled()) {
+            mainPage.acceptCookiesButton.click();
+        }
     }
 
     @AfterEach
@@ -31,25 +36,31 @@ public class MainPageTest {
     }
 
     @Test
-    public void search() {
+    public void search() throws InterruptedException {
         mainPage.searchButton.click();
 
-        WebElement searchField = driver.findElement(By.cssSelector("[data-test='search-input']"));
+        Thread.sleep(1000);
+
+        WebElement searchField = driver.findElement(By.cssSelector("[data-test-id='search-input']"));
         searchField.sendKeys("Selenium");
 
         WebElement submitButton = driver.findElement(By.cssSelector("button[data-test='full-search-button']"));
         submitButton.click();
 
-        WebElement searchPageField = driver.findElement(By.cssSelector("input[data-test='search-input']"));
+        WebElement searchPageField = driver.findElement(By.cssSelector("input[data-test-id='search-input']"));
         assertEquals("Selenium", searchPageField.getAttribute("value"));
     }
 
     @Test
-    public void toolsMenu() {
+    public void toolsMenu() throws InterruptedException {
+
+
         mainPage.toolsMenu.click();
 
-        WebElement menuPopup = driver.findElement(By.cssSelector("div[data-test='main-submenu']"));
+        WebElement menuPopup = driver.findElement(By.cssSelector("div[data-test='main-submenu-suggestion']"));
         assertTrue(menuPopup.isDisplayed());
+
+        Thread.sleep(1000);
     }
 
     @Test
