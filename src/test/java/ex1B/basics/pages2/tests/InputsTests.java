@@ -1,6 +1,6 @@
-package ex1B.basics.pages.tests;
+package ex1B.basics.pages2.tests;
 
-import ex1B.basics.pages.pages.InputsPage;
+import ex1B.basics.pages2.pages.InputsPage;
 import org.junit.jupiter.api.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

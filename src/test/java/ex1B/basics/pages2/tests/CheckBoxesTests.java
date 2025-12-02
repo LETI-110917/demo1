@@ -1,7 +1,7 @@
-// src/test/java/ex1B/basics/pages/tests/CheckBoxesTests.java
-package ex1B.basics.pages.tests;
+// src/test/java/ex1B/basics/pages2/tests/CheckBoxesTests.java
+package ex1B.basics.pages2.tests;
 
-import ex1B.basics.pages.pages.CheckBoxesPage;
+import ex1B.basics.pages2.pages.CheckBoxesPage;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
