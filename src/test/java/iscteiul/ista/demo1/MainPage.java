@@ -19,11 +19,13 @@ public class MainPage {
     @FindBy(css = "[data-test='site-header-search-action']")
     public WebElement searchButton;
 
+    // Cookie banner accept button
     @FindBy(css = "button.ch2-btn.ch2-allow-all-btn.ch2-btn-primary")
     public WebElement acceptCookiesButton;
-
 
     public MainPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
     }
 }
+
+//<button class="ch2-btn ch2-allow-all-btn ch2-btn-primary" tabindex="0">Accept All</button>
