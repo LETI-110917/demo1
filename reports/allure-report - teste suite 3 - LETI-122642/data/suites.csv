@@ -1,0 +1,8 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","2988","tableContainsExpectedMovies()","","2025-12-02","passed","2025-12-02","","ex2.database.tests.DatabasePageTest","ex2.database.tests.DatabasePageTest","tableContainsExpectedMovies"
+"","2658","imdbLinksArePresent()","","2025-12-02","failed","2025-12-02","","ex2.database.tests.DatabasePageTest","ex2.database.tests.DatabasePageTest","imdbLinksArePresent"
+"","23006","openImdbLinks()","","2025-12-02","passed","2025-12-02","","ex2.database.tests.DatabasePageTest","ex2.database.tests.DatabasePageTest","openImdbLinks"
+"","8261","gridLoadsCorrectly()","","2025-12-02","passed","2025-12-02","","ex2.database.tests.DatabasePageTest","ex2.database.tests.DatabasePageTest","gridLoadsCorrectly"
+"","6248","moviesAreShownCorrectly()","","2025-12-02","passed","2025-12-02","","ex2.database.tests.DatabasePageTest","ex2.database.tests.DatabasePageTest","moviesAreShownCorrectly"
+"","4118","searchNonExistentMovieShowsNoResults()","","2025-12-02","broken","2025-12-02","","ex2.database.tests.DatabasePageTest","ex2.database.tests.DatabasePageTest","searchNonExistentMovieShowsNoResults"
+"","1448","searchMovieShowsDetails()","","2025-12-02","broken","2025-12-02","","ex2.database.tests.DatabasePageTest","ex2.database.tests.DatabasePageTest","searchMovieShowsDetails"
