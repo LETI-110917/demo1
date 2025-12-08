@@ -1,0 +1,1 @@
+{"name":"Allure Report","stats":{"total":1,"retries":1,"new":1,"passed":1},"status":"passed","duration":13776,"createdAt":1764772625534,"withTestResultsLinks":true,"plugin":"Awesome","newTests":[{"id":"44d19c7054d2297a513fb65b47849ec1","name":"testAddNewProduct()","status":"passed","duration":13776}],"flakyTests":[],"retryTests":[],"pullRequestHref":"","jobHref":""}
